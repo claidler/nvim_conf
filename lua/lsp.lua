@@ -2,6 +2,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Setup language servers.
 local lspconfig = require('lspconfig')
+
 lspconfig.tsserver.setup {
   capabilities = capabilities
 }
