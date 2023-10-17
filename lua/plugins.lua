@@ -22,7 +22,8 @@ require('packer').startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
 	use 'jose-elias-alvarez/null-ls.nvim'
 	use 'MunifTanjim/prettier.nvim'
-
+	use 'tpope/vim-fugitive'
+  use { "zbirenbaum/copilot.lua" }
   use { "folke/which-key.nvim",
 	  config = function()
     vim.o.timeout = true
