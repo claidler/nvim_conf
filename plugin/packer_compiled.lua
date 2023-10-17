@@ -99,11 +99,21 @@ _G.packer_plugins = {
     path = "/Users/chrislaidler/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/chrislaidler/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["gp.nvim"] = {
-    config = { "\27LJ\2\n0\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\agp\frequire\0" },
+    config = { "\27LJ\2\n„\1\0\0\6\0\b\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0006\3\3\0009\3\4\3'\5\5\0B\3\2\2=\3\a\2B\0\2\1K\0\1\0\19openai_api_key\1\0\1\15chat_model\ngpt-4\19OPENAI_API_KEY\vgetenv\aos\nsetup\agp\frequire\0" },
     loaded = true,
     path = "/Users/chrislaidler/.local/share/nvim/site/pack/packer/start/gp.nvim",
     url = "https://github.com/robitx/gp.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/chrislaidler/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -120,10 +130,30 @@ _G.packer_plugins = {
     path = "/Users/chrislaidler/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/chrislaidler/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "/Users/chrislaidler/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    url = "https://github.com/MunifTanjim/prettier.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/chrislaidler/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["vim-crystalline"] = {
     loaded = true,
     path = "/Users/chrislaidler/.local/share/nvim/site/pack/packer/start/vim-crystalline",
     url = "https://github.com/rbong/vim-crystalline"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/chrislaidler/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["which-key.nvim"] = {
     config = { "\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0" },
@@ -136,7 +166,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: gp.nvim
 time([[Config for gp.nvim]], true)
-try_loadstring("\27LJ\2\n0\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\agp\frequire\0", "config", "gp.nvim")
+try_loadstring("\27LJ\2\n„\1\0\0\6\0\b\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0006\3\3\0009\3\4\3'\5\5\0B\3\2\2=\3\a\2B\0\2\1K\0\1\0\19openai_api_key\1\0\1\15chat_model\ngpt-4\19OPENAI_API_KEY\vgetenv\aos\nsetup\agp\frequire\0", "config", "gp.nvim")
 time([[Config for gp.nvim]], false)
 -- Config for: which-key.nvim
 time([[Config for which-key.nvim]], true)

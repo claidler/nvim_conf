@@ -1,7 +1,10 @@
 require "plugins"
 require "lsp"
 
-vim.keymap.set('t', 'jk', [[<C-\><C-n>]])
+vim.api.nvim_set_keymap('i', 'jk', '<ESC>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '-', ':e .<CR>', { noremap = true, silent = true })
+
+vim.o.relativenumber = true
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.softtabstop = 2
