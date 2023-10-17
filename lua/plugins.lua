@@ -23,7 +23,14 @@ require('packer').startup(function(use)
 	use 'jose-elias-alvarez/null-ls.nvim'
 	use 'MunifTanjim/prettier.nvim'
 	use 'tpope/vim-fugitive'
-  use { "zbirenbaum/copilot.lua" }
+	use {
+  "zbirenbaum/copilot.lua",
+		cmd = "Copilot",
+		event = "InsertEnter",
+		config = function()
+			require("copilot").setup({})
+		end,
+	}
   use { "folke/which-key.nvim",
 	  config = function()
     vim.o.timeout = true
