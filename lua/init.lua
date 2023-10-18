@@ -3,6 +3,9 @@ require "lsp"
 
 vim.api.nvim_set_keymap('i', 'jk', '<ESC>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '-', ':e .<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<C-s>', '<Esc>:w<CR>a', { noremap = true, silent = true })
+
 vim.g.mapleader = ' '
 
 vim.o.relativenumber = true
@@ -12,7 +15,7 @@ vim.o.softtabstop = 2
 vim.o.termguicolors = true
 vim.o.number = true
 vim.o.completeopt = "menuone,noselect"
-vim.cmd [[colorscheme catppuccin]]
+vim.cmd [[colorscheme horizon]]
 local cmp = require'cmp'
   cmp.setup({
     window = {

@@ -25,6 +25,7 @@ require("packer").startup(function(use)
 	use("tpope/vim-fugitive")
 	use("github/copilot.vim")
 	use("prisma/vim-prisma")
+	use("lunarvim/horizon.nvim")
 	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
