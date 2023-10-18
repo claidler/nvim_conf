@@ -44,6 +44,9 @@ require("packer").startup(function(use)
 			require("gp").setup({
 				openai_api_key = os.getenv("OPENAI_API_KEY"),
 				chat_model = "gpt-4",
+				chat_topic_gen_model = "gpt-4",
+				command_model = "gpt-4",
+				command_system_prompt = "You are a code editor. Only return the edited code. Do not explain your response"
 			})
 		end,
 	})
