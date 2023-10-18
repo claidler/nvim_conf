@@ -3,6 +3,7 @@ require "lsp"
 
 vim.api.nvim_set_keymap('i', 'jk', '<ESC>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '-', ':e .<CR>', { noremap = true, silent = true })
+vim.g.mapleader = ' '
 
 vim.o.relativenumber = true
 vim.o.tabstop = 2
