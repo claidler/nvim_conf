@@ -15,7 +15,7 @@ vim.o.softtabstop = 2
 vim.o.termguicolors = true
 vim.o.number = true
 vim.o.completeopt = "menuone,noselect"
-vim.cmd [[colorscheme horizon]]
+vim.cmd [[colorscheme catppuccin]]
 local cmp = require'cmp'
   cmp.setup({
     window = {
